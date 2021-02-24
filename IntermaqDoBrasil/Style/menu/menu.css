@@ -1,0 +1,12 @@
+.menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu nav ul {
+    display: flex;
+}
+.menu nav ul li {
+    list-style: none;
+}
