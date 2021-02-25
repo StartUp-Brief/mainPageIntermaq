@@ -1,0 +1,16 @@
+
+.menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.menu .logo{
+    height: 80px;
+}
+
+.menu nav ul {
+    display: flex;
+}
+.menu nav ul li {
+    list-style: none;
+}
