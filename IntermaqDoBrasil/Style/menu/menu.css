@@ -1,7 +1,11 @@
+
 .menu {
     align-items: center;
     display: flex;
     justify-content: space-between;
+}
+.menu .logo{
+    height: 80px;
 }
 
 .menu nav ul {
