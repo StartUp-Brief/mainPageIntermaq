@@ -36,7 +36,7 @@ h2 {
   z-index: 2;
   position: absolute;
 
-  animation: aberturaRed 6s ease;
+  animation: aberturaRed 3s ease;
 }
 
 .azul {
@@ -46,16 +46,11 @@ h2 {
   z-index: 2;
   position: absolute;
 
-  animation: aberturaBlue 6s ease alternate;
+  animation: aberturaBlue 3s ease alternate;
 }
 
 @keyframes aberturaRed {
-  30% {
-    transform: translateX(0);
-    transform: rotate(-360deg);
-  }
-
-  70% {
+  50% {
     transform: translateX(-55%);
   }
 
@@ -64,11 +59,7 @@ h2 {
   }
 }
 @keyframes aberturaBlue {
-  30% {
-    transform: translateX(0);
-    transform: rotate(-360deg);
-  }
-  70% {
+  50% {
     transform: translateX(50%);
   }
   100% {
