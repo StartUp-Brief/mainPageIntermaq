@@ -1,86 +1,77 @@
-.AnimationSheet{
-    background: #ffff;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+.AnimationSheet {
+  background: #ffff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 .animacao {
-    text-align: center;
-    margin: 10% auto;
-    
+  text-align: center;
+  margin: 10% auto;
 }
-h1{
-    display: inline-block;
-    align-items: center;
-    vertical-align: top;
-    color: red;
-    margin-bottom: 0.2em;
-    margin-top: 10%;
-    font-size: 44px;
-    transform: translateX(20px);
-    
+h1 {
+  display: inline-block;
+  align-items: center;
+  vertical-align: top;
+  color: red;
+  margin-bottom: 0.2em;
+  margin-top: 10%;
+  font-size: 44px;
+  transform: translateX(20px);
 }
-h1 strong{
-    color: blue;
+h1 strong {
+  color: blue;
 }
 
-h2{
-    display: block;
-    align-items: center;
-    transform: translateX(20px);
-
+h2 {
+  display: block;
+  align-items: center;
+  transform: translateX(20px);
 }
-
 .vermelho {
-   
   width: 20em;
   height: 25em;
   display: inline;
   z-index: 2;
   position: absolute;
-  
+
   animation: aberturaRed 6s ease;
 }
 
 .azul {
-  
   width: 20em;
   height: 25em;
   display: inline;
   z-index: 2;
   position: absolute;
-  
+
   animation: aberturaBlue 6s ease alternate;
-
 }
 
-@keyframes aberturaRed{
-   
-    30%{
+@keyframes aberturaRed {
+  30% {
     transform: translateX(0);
     transform: rotate(-360deg);
-   }
-    
-    70%{
-        transform: translateX(-55%);
-    }
+  }
 
-    100%{
-        transform: translateX(0);
-    }
+  70% {
+    transform: translateX(-55%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
-@keyframes aberturaBlue{
-     30%{
+@keyframes aberturaBlue {
+  30% {
     transform: translateX(0);
     transform: rotate(-360deg);
-   }
-    70%{
-         transform: translateX(50%);
-     }
-    100%{
+  }
+  70% {
+    transform: translateX(50%);
+  }
+  100% {
     transform: translateX(0);
-    }
- }
- 
+  }
+}
