@@ -11,39 +11,57 @@
     <link rel="shortcut icon" href="../Assets/img/fav-ico.png" />
 
     <!-- Links css -->
+    <!-- Cabecalho css -->
     <link href="../Style/menu/menu__item.css" rel="stylesheet" />
     <link href="../Style/menu/menu__link.css" rel="stylesheet" />
-    <link href="../Style/animacao.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../Style/menu/menu__lista.css" />
+
+    <!-- animação css -->
+    <link href="../Style/animacao.css" rel="stylesheet"/>
+   
     <link rel="stylesheet" href="../Style/Style.css" />
     <link rel="stylesheet" href="../Style/body.css" />
+
+    <!-- Banner css -->
     <link rel="stylesheet" href="../Style/banner/banner.css">
+
+    <!-- Produtos css -->
+    <link rel="stylesheet" href="../Style/produtos/produtos.css">
+    <link rel="stylesheet" href="../Style/produtos/pesquisar.css">
+    
+    <link rel="stylesheet" href="../Style/produtos/card.css">
 
     <!--Fonte Ubunto  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
+    <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
+
+
 <body class="body">
-    <div class="AnimationSheet">
-      <div class="animacao">
-          <svg  id="" class = "Red vermelho"xmlns="http://www.w3.org/2000/svg" width="245.343" height="333.743" viewBox="0 0 245.343 333.743">
-              <path d="M529.586,94.149V427.892H774.93Z" transform="translate(-529.586 -94.149)" fill="red"/>
-            </svg>
-            
-            <svg id="" class="Blue azul" xmlns="http://www.w3.org/2000/svg" width="246.831" height="335.768" viewBox="0 0 246.831 335.768">
-              <path  d="M529.586,94.149V427.892H774.93Z" transform="translate(775.918 428.392) rotate(180)" fill="#03f" stroke="#03f" stroke-width="1"/>
-            </svg>
-            
-          <h1>INTER<strong>MAQ</strong></h1>
-          <h2>Do Brasil</h2>     
-      </div>
+
+  <div class="AnimationSheet">
+    <div class="animacao">
+        <svg  id="" class = "Red vermelho"xmlns="http://www.w3.org/2000/svg" width="245.343" height="333.743" viewBox="0 0 245.343 333.743">
+            <path d="M529.586,94.149V427.892H774.93Z" transform="translate(-529.586 -94.149)" fill="#f13433"/>
+          </svg>
+          
+          <svg id="" class="Blue azul" xmlns="http://www.w3.org/2000/svg" width="246.831" height="335.768" viewBox="0 0 246.831 335.768">
+            <path  d="M529.586,94.149V427.892H774.93Z" transform="translate(775.918 428.392) rotate(180)" fill="#215baa" stroke="#03f" stroke-width="1"/>
+          </svg>
+          
+        <h1 id="titulo-animacao">INTER<strong>MAQ</strong></h1>
+        <h2>Do Brasil</h2>     
+    </div>
   </div>
+
+
 
     <header class="cabecalho">
       <nav class="menu">
-        <img class="logo" src="../Assets/img/Logo-Novo.png" style="height: 80px;">
+        <img class="logo" src="../Assets/img/Logo.png" style="height: 80px;">
         <ul class="menu__lista">
           <li class="menu__item">
             <a class="menu__link ativo" href="#">Início</a>
@@ -63,16 +81,248 @@
     </header>
 
     <hr>
-
+    <!-- Aqui será nosso slider -->
     <div class="banner">
-      <img src="../Assets/Banner/Banner01-v2.1.jpg" alt="">
+      <img src="../Assets/Banner/Banner02-v2.2.jpg" alt="">
     </div>
+
+    <!-- Aqui começam os cards de produtos -->
+    
+    <fieldset id="produtos">
+
+      <legend><h1 id="nossos-produtos">Nossos produtos</h1></legend>
+
+      <div id="pesquisar">
+        <input type="search" name="pesquisaProduto" id="pesquisaProduto" placeholder="Pesquise um produto">
+        <button>Pesquisar</button>
+      </div>
+
+      <div id="cardProdutos">
+
+        <ul>
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Secador de grãos.jpg" alt="">
+                </div>
+                <h3>Secadora de grãos de plástico</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Sugador de grãos.jpg" alt="">
+                </div>
+                <h3>Sugador de grãos de plástico</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Bobinadeiras-Monofilamentos.jpg" alt="">
+                </div>
+                <h3>Bobinadeiras - Monofilamento</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Bobinadeiras para fitilho.jpg" alt="">
+                </div>
+                <h3>Bobinadeiras para fitilho (flat)</h3>
+              </div>
+            </li>
+          </a>
+          
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/CABEÇOTES E TROCA TELAS HIDRÁULICOS.jpg" alt="">
+                </div>
+                <h3>Cabeçotes e troca telas hidráulico</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Extrusora reparadora.jpg" alt="">
+                </div>
+                <h3>Extrusora recuperadora</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Grade magnética.jpg" alt="">
+                </div>
+                <h3>Grades magnéticas</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Granulador.jpg" alt="">
+                </div>
+                <h3>Granulador</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Misturador.jpg" alt="">
+                </div>
+                <h3>Misturador</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Sugador de grãos.jpg" alt="">
+                </div>
+                <h3>Moinhos</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Moto redutor.jpg" alt="">
+                </div>
+                <h3>Moto Redutor</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Rdutor - dupla rosca.jpg" alt="">
+                </div>
+                <h3>Redutor - Dupla Rosca</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Redutor monorosca.jpg" alt="">
+                </div>
+                <h3>Redutor - Mono rosca</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Rosca e canhão - Dupla rosca.jpg" alt="">
+                </div>
+                <h3>Rosca e canhão - Dupla rosca</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Mono rosca.jpg" alt="">
+                </div>
+                <h3>Rosca e canhão - Dupla rosca</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Mono rosca.jpg" alt="">
+                </div>
+                <h3>Rosca e canhão - Dupla rosca</h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Slit sealer.jpg" alt="">
+                </div>
+                <h3>Slit sealer </h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Ventuinha para resfriar canhão.jpg" alt="">
+                </div>
+                <h3>Ventoinha para resfriar canhão </h3>
+              </div>
+            </li>
+          </a>
+
+          <a href="#">
+            <li>
+              <div class="card">
+                <div class="imgBox">
+                  <img src="../Assets/Produtos/Ventuinha para resfriar canhão.jpg" alt="">
+                </div>
+                <h3>Ventoinha para retirar umidade</h3>
+              </div>
+            </li>
+          </a>
+
+        </ul>
+      </div>
+
+    </fieldset>
         
   </body>
 </html>
+
+
+
 <script>
 $(".AnimationSheet").one("animationend", function() {
     $(".AnimationSheet").css("transform", "translateX(-100%)");
+    $(".AnimationSheet").css("display", "none");
     
 })
 

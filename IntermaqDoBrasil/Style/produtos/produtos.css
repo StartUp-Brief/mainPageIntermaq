@@ -1,0 +1,11 @@
+#produtos {
+  display: inline-block;
+  width: 99%;
+  text-align: center;
+  border-color: #215baa;
+}
+
+#nossos-produtos {
+  text-align: left;
+  color: #215baa;
+}

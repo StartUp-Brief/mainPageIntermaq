@@ -10,18 +10,18 @@
   text-align: center;
   margin: 10% auto;
 }
-h1 {
+#titulo-animacao {
   display: inline-block;
   align-items: center;
   vertical-align: top;
-  color: red;
+  color: #f13433;
   margin-bottom: 0.2em;
   margin-top: 10%;
   font-size: 44px;
   transform: translateX(20px);
 }
-h1 strong {
-  color: blue;
+#titulo-animacao strong {
+  color: #215baa;
 }
 
 h2 {
