@@ -1,6 +1,6 @@
 #produtos {
   display: inline-block;
-  width: 99%;
+  max-width: fit-content;
   text-align: center;
   border-color: #215baa;
 }
