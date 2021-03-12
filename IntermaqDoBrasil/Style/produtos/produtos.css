@@ -1,6 +1,9 @@
 #produtos {
   display: inline-block;
   width: 98%;
+  text-align: center;
+  border-color: #215baa;
+  border-width: 3px;
 }
 #nossos-produtos {
   text-align: left;
