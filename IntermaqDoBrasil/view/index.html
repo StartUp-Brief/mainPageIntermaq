@@ -366,10 +366,6 @@ function(){
 $("#pesquisaProduto").keyup(function(){
   var valorDePesquisa = $("#pesquisaProduto").val().toLocaleUpperCase();
   $(".card").children(".nome-produto").each(function(){
-  if($(this).text().toLocaleUpperCase().indexOf(valorDePesquisa) == 0 
-    || $(this).text().toLocaleUpperCase().indexOf(valorDePesquisa) == "") {
-      $(".nome-produto").parent('.card').css("display", "inline-table");
-    }
   if ($(this).text().toLocaleUpperCase().indexOf(valorDePesquisa) < 0) {
     $(this).parent('.card').css("display", "none");
   }
