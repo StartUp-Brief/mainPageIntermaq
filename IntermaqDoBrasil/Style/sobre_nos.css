@@ -1,0 +1,32 @@
+#sobre-nos {
+  margin: 20px auto;
+  width: 980px;
+  text-align: justify;
+}
+#linha {
+  transform: translateY(-20px);
+}
+#sobre-nos h1 {
+  color: #215baa;
+}
+#sobre-nos h2 {
+  text-align: center;
+  color: #f13433;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#sobre-nos p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  display: inline-block;
+  max-width: 1600px;
+}
+#sobre-nos div {
+  width: 100%;
+  text-align: center;
+}
+#sobre-nos img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+}
