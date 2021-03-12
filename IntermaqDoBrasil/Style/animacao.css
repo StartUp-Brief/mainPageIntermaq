@@ -1,3 +1,7 @@
+#site {
+  display: none;
+}
+
 .AnimationSheet {
   background: #ffff;
   position: absolute;

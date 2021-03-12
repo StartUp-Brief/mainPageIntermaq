@@ -18,6 +18,10 @@
   background-image: url("../../Assets/img/fundo card.jpg");
   padding: 5px;
 }
+
+.card:hover {
+  cursor: pointer;
+}
 .card img {
   border-radius: 10%;
 }
@@ -31,10 +35,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: all ease 0.23s;
 }
-.card h3:hover {
-  cursor: pointer;
-  background: #f13433b2;
-}
+
 .descricao {
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
