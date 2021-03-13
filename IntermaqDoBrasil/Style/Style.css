@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #slider {
   margin: 0 auto;
   width: 800rem;
@@ -104,4 +105,19 @@
 #bullets label {
   display: inline-block;
   width: 100px;
+=======
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input,
+button:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+fieldset {
+  margin: none;
+}
+ul {
+  list-style: none;
+>>>>>>> 5af735c20d3d0567322ec357c459a11ee076b83e
 }

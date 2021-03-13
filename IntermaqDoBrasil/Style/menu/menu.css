@@ -1,16 +1,15 @@
-
 .menu {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
-.menu .logo{
-    height: 80px;
+.menu .logo {
+  height: 80px;
 }
 
 .menu nav ul {
-    display: flex;
+  display: flex;
 }
 .menu nav ul li {
-    list-style: none;
+  list-style: none;
 }
