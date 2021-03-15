@@ -5,6 +5,9 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
+footer p {
+  font-size: larger;
+}
 .direita {
   text-align: center;
   width: 49%;
@@ -17,4 +20,21 @@ footer {
 }
 #linha {
   margin: 0;
+  padding: 0%;
+}
+.redes-sociais {
+  display: inline;
+  vertical-align: middle;
+  width: 30px;
+}
+.redes-sociais-container{
+  display: inline;
+  margin: 10px 10px;
+}
+.redes-sociais-container p{
+  display: inline;
+ 
+}
+.redes-sociais-container a{
+  color: aliceblue;
 }
