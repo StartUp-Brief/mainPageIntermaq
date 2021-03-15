@@ -3,7 +3,7 @@
   width: 980px;
   text-align: justify;
 }
-#linha {
+.sobre-nos #linha {
   transform: translateY(-20px);
 }
 #sobre-nos h1 {
