@@ -1,9 +1,12 @@
 footer {
   color: aliceblue;
-  background: #215baa;
+  background: #ffffff;
   height: fit-content;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: auto;
+}
+footer .footer-corpo {
+  background: rgb(33, 91, 170);
 }
 footer p {
   font-size: larger;

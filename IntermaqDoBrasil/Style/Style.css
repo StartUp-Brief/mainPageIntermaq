@@ -1,14 +1,19 @@
-.body {
+html {
+  scroll-behavior: smooth;
+  transition: all ease;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
   min-height: 100%;
   margin: 0;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html {
-  scroll-behavior: smooth;
-  transition: all ease;
-  min-width: 100%;
-}
+
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
