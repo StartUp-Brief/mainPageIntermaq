@@ -1,0 +1,29 @@
+/* fieldset */
+#site section {
+  width: 100%;
+  text-align: center;
+}
+
+#contato {
+  margin: 0 auto;
+  display: inline-block;
+  width: 980px;
+  border-color: #215baa;
+  border-width: 3px;
+}
+#titulo-contato {
+  text-align: left;
+  margin: 10px;
+  color: #215baa;
+}
+
+#contato form {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#contato input,
+label {
+  display: block;
+  text-align: left;
+}
