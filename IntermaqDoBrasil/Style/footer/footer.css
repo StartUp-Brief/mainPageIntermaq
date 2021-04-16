@@ -3,7 +3,7 @@ footer {
   background: #215baa;
   height: fit-content;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 0;
+  margin-top: auto;
 }
 footer p {
   font-size: larger;
@@ -27,14 +27,13 @@ footer p {
   vertical-align: middle;
   width: 30px;
 }
-.redes-sociais-container{
+.redes-sociais-container {
   display: inline;
   margin: 10px 10px;
 }
-.redes-sociais-container p{
+.redes-sociais-container p {
   display: inline;
- 
 }
-.redes-sociais-container a{
+.redes-sociais-container a {
   color: aliceblue;
 }

@@ -1,5 +1,5 @@
 /* fieldset */
-#site section {
+#box-contato {
   width: 100%;
   text-align: center;
 }
@@ -23,7 +23,17 @@
 }
 
 #contato input,
-label {
+label,
+textarea {
   display: block;
   text-align: left;
+}
+
+#contato input,
+textarea {
+  margin-bottom: 20px;
+}
+#footer-contato {
+  position: fixed;
+  bottom: 0;
 }

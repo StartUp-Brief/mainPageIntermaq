@@ -1,11 +1,13 @@
 .body {
+  min-height: 100%;
   margin: 0;
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
   transition: all ease;
+  min-width: 100%;
 }
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
