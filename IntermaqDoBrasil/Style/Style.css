@@ -2,7 +2,10 @@
   margin: 0;
   width: 100%;
 }
-
+html{
+  scroll-behavior: smooth;
+  transition: all ease;
+}
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
