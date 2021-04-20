@@ -136,6 +136,17 @@ textarea {
   display: inline-block;
   margin: 5px;
   text-align: center;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  border-color: #215baa;
+}
+
+.numero:hover{
+  padding: 0 10px;
+  transition: all ease 0.3s;
+  border-left: solid;
+  border-right: solid;
+  
 }
 
 .numero img{
