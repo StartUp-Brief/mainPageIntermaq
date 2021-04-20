@@ -16,7 +16,7 @@
 
 .menu__link:hover {
   border-left: solid #fd5050;
-  background: rgb(131, 158, 248);
+  background: #215baa;
   transition: all ease 180ms;
   color: aliceblue;
 }

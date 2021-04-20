@@ -57,20 +57,18 @@
 
       <hr />
       <div id="box-contato">
+        <section class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6884667222557!2d-46.6077819!3d-23.5437048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5926a84a0dcb%3A0x9f7b26aeca48cc9b!2sIntermaq%20do%20Brasil%20M%C3%A1quinas%20e%20Mat%C3%A9rias%20Primas!5e0!3m2!1spt-BR!2sbr!4v1618593496058!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+          ></iframe>
+        </section>
+
         <fieldset id="contato">
           <legend id="titulo-contato"><h1>Envie-nos uma mensagem</h1></legend>
           <form action="">
-            <div>
-              <label for="email">E-mail</label>
-              <input
-                id="email"
-                type="email"
-                placeholder="Digite seu email"
-                name="email"
-              />
-            </div>
-
-            <div>
+            <div class="bloco-input">
               <label for="assunto">Assunto ou produto que deseja</label>
               <input id="assunto" type="text" name="assunto" id="assunto" />
             </div>
@@ -84,8 +82,85 @@
                 rows="10"
               ></textarea>
             </div>
+
+            <button type="button" onclick="criarUrl()">Enviar</button>
           </form>
         </fieldset>
+
+        
+
+        <div id="contato-info">
+          <h1>Entre em contato diretamente com o nosso setor comercial</h1>
+        </div>
+
+        <div class="contato-cards">
+          <div class="contato-card">
+            <div class="img-box">
+              <img src="../Assets/img/icones/price.png" alt="preços" />
+            </div>
+
+            <h2> Preços</h2>
+            <p class="nome">Pergunte a respeito dos nossos preços com nossos funcionários. </p>
+          </div>
+
+          <div class="contato-card">
+            <div class="img-box">
+              <img src="../Assets/img/icones/services.png" alt="serviços" />
+            </div>
+
+            <h2>Serviços</h2>
+            <p class="nome">Caso precise de manutenção em algum dos nossos produtos, nos envie um e-mail.</p>
+          </div>
+
+          <div class="contato-card">
+            <div class="img-box">
+              <img src="../Assets/img/icones/products.png" alt="produtos" />
+            </div>
+
+            <h2>Prdutos</h2>
+            <p class="nome">Caso tenha se interessado por um ou mais de nossos produtos, fique a vontade para tirar quais quer duvida que tiver.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contato-numeros">
+        <div class="telefones">
+          <div class="numero">
+            <img src="../Assets/img/Whats.png" alt="">
+            <p> +55(11)94110-1919</p>
+          </div>
+
+          <div class="numero">
+            <img src="../Assets/img/Whats.png" alt="">
+            <p> +55(11)93249-2230</p>
+          </div>
+
+          <div class="numero">
+            <img src="../Assets/img/Whats.png" alt="">
+            <p> +55(11)99511-4050</p>
+          </div>
+
+        </div>  
+        <div class="telefones">
+          <div class="numero">
+            <img src="../Assets/img/icones/telphone.png " alt="">
+            <p> (11)2291-3011 </p>
+          </div>
+          <div class="numero">
+            <img src="../Assets/img/icones/telphone.png " alt="">
+            <p> (11)2081-0965 </p>
+          </div>
+          <div class="numero">
+            <img src="../Assets/img/icones/telphone.png " alt="">
+            <p> (11)2291-7670 </p>
+          </div>
+          <div class="numero">
+            <img src="../Assets/img/icones/telphone.png " alt="">
+            <p> (11)2694-4705 </p>
+          </div>
+        </div>
+        
+
       </div>
 
       <footer id="footer-contato">
@@ -173,4 +248,20 @@
   </body>
 </html>
 
-<script></script>
+<script>
+  function criarUrl() {
+    let assunto = document.getElementById("assunto").value;
+    let mensagem = document.getElementById("mensagem").value;
+    console.log(assunto + mensagem);
+
+    if (assunto !== "" || mensagem !== "") {
+      let url =
+        "mailto:contato@intermaqdobrasil.com.br?subject=" +
+        assunto +
+        "&body=" +
+        mensagem;
+      console.log(url);
+      window.location.href = url;
+    }
+  }
+</script>
