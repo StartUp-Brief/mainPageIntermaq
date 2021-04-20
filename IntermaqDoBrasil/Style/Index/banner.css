@@ -3,7 +3,7 @@
   height: 10em;
   margin-top: 20px;
   text-align: center;
-  display: inline-block;
+  display: fixed;
 }
 .slide-container {
   width: 1300px;
