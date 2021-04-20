@@ -9,6 +9,9 @@
   margin: 10px;
   vertical-align: middle;
 }
+.mapa iframe{
+  border: none;
+}
 
 #contato {
   margin: 0 auto;
@@ -69,6 +72,9 @@ textarea {
   padding: 10px;
   transition: all ease 0.3s;
   font-weight: bolder;
+}
+#contato button:active{
+  background:#3caa21;
 }
 
 .bloco-input {
