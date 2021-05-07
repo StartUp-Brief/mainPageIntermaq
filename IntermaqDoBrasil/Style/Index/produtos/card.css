@@ -1,6 +1,6 @@
 #cardProdutos {
   margin-top: 10px;
-  background: rgb(255, 255, 255);
+ 
   padding: 10px 0;
 }
 #cardProdutos ul li {
@@ -8,27 +8,25 @@
 }
 
 .card {
-  border: solid;
-  border-radius: 10px;
-  border-color: #215baa;
+ 
   width: 300px;
-  height: 287px;
+  height: 300px;
   display: inline-block;
   margin: 10px;
-  background-image: url("../../Assets/img/fundo card.jpg");
-  padding: 5px;
+  background-image: url("../../../Assets/img/fundo\ card.jpg");
+  border-radius: 50px;
+  
+ 
+  
+  
 }
 
 .card:hover {
   cursor: pointer;
 }
-.card img {
-  border-radius: 10%;
-}
+
 .card h3 {
   width: 100%;
-  border-top: solid;
-  border-bottom: solid;
   border-color: #215baa;
   background: #619ae9b2;
   color: #ffff;

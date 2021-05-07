@@ -1,7 +1,7 @@
 #sobre-nos {
   margin: 20px auto;
-  width: 980px;
-  text-align: justify;
+  width:100%;
+  text-align: center;
 }
 .sobre-nos #linha {
   transform: translateY(-20px);

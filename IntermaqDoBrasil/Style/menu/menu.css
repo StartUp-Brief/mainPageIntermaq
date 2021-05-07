@@ -2,14 +2,64 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  vertical-align: middle;
+  height: 10%;
 }
 .menu .logo {
   height: 80px;
 }
 
-.menu nav ul {
-  display: flex;
+.menu .financiamento{
+  text-align: center;
+  color:#215baa;
+  align-items: center;
+  display: block;
 }
-.menu nav ul li {
-  list-style: none;
+.menu .bndes{
+  height: 30px;
+}
+
+.bndes{
+  margin:5px 40px;
+}
+.menu .bars{
+  cursor: pointer;
+  margin-right: 30px;
+  height: 25px;
+  width: 40px;
+  transition: all ease 0.1s;
+}
+
+.menu .bars:hover{
+  background: #fd505049;
+  transition: all ease 0.2s;
+
+}
+
+.offcanvas-body{
+  background: rgb(238, 238, 238);
+   /* border-top: solid 6px; */
+  border-left: solid 6px;
+  border-color: #215baa;
+}
+
+.offcanvas{
+  width: fit-content;
+
+}
+.offcanvas-body ul li{
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: larger;
+  
+}
+
+
+
+@media screen and (max-width: 850px){
+ 
+  .menu .logo{
+    display: none;
+  }
 }

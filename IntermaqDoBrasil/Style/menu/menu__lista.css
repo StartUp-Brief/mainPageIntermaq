@@ -3,4 +3,5 @@
   list-style: none;
   align-items: flex-end;
   float: right;
+  vertical-align: middle;
 }

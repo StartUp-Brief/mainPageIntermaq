@@ -1,11 +1,23 @@
 #produtos {
   display: inline-block;
-  width: 98%;
+  width: 100%;
   text-align: center;
-  border-color: #215baa;
-  border-width: 3px;
+  background-image: url("../../../Assets/img/bg.jpeg");
+  background-size: auto;
+  background-blend-mode: color-dodge;
 }
 #nossos-produtos {
-  text-align: left;
-  color: #215baa;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bolder;
+  text-shadow: 5px 5px 5px black;
+ 
+ 
+}
+
+#produtos a{
+  text-decoration: none;
+  margin: 0%;
+  padding: 0;
 }

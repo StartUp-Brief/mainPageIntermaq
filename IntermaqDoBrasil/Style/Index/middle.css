@@ -1,0 +1,21 @@
+#middle{
+    background: rgb(238, 238, 238);
+    padding: 10px 0;
+}
+#middle .row{
+    margin: 0 20px;
+}
+
+#middle .col-lg-5, .col-lg-6{
+    margin: 20px 20px;
+    vertical-align: middle;
+}
+#middle img{
+    height: 400px;
+}
+#middle h1{
+    color: #215baa;
+}
+#middle p{
+    text-align: justify;
+}

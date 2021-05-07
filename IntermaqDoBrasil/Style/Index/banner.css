@@ -1,44 +1,5 @@
-.banner {
-  width: 100%;
-  height: 10em;
-  margin-top: 20px;
-  text-align: center;
-  display: fixed;
-}
-.slide-container {
-  width: 1300px;
-  height: fit-content;
-  text-align: center;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.img-container {
-  width: 3900px;
-  height: 420px;
-  position: relative;
-  transition: left 2s;
-}
-.slider-img {
-  float: left;
-}
-.button-container {
-  position: relative;
-  top: -20px;
-}
-.slide-button {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background: #215baa;
-  margin: 5px;
-}
-#img-1:target ~ .img-container {
-  left: 0px;
-}
-#img-2:target ~ .img-container {
-  left: -1300px;
-}
-#img-3:target ~ .img-container {
-  left: -2600px;
+@media(max-width:1000px){
+  .carousel-inner{
+    margin-top: 3rem;
+  }
 }

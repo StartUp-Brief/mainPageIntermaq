@@ -2,6 +2,7 @@
 #box-contato {
   width: 100%;
   text-align: center;
+  margin-top: 80px;
 }
 
 .mapa {
@@ -11,15 +12,18 @@
 }
 .mapa iframe{
   border: none;
+  margin-top: 50px;
 }
 
 #contato {
   margin: 0 auto;
   display: inline-block;
   width: 800px;
+  border: solid;
   border-color: #215baa;
   border-width: 3px;
   vertical-align: middle;
+  margin: 0 10px;
 }
 #titulo-contato {
   text-align: left;
@@ -29,7 +33,7 @@
 
 #contato form {
   margin: 0 auto;
-  width: fit-content;
+  width: 60%;
   
 }
 
@@ -97,17 +101,21 @@ textarea {
   align-items: center;
   margin: 0% auto;
 }
+.contato-cards{
+  background: rgb(224, 224, 224);
+}
+
 .contato-card {
   display: inline-block;
   border: solid;
   border-color: rgb(151, 151, 151);
   border-radius: 5px;
-  height: 300px;
+  height: 400px;
   vertical-align: middle;
   margin: 10px;
   width: 300px;
   padding: 10px 15px;
-  
+  background: rgb(255, 255, 255);
 
 }
 
@@ -160,8 +168,8 @@ textarea {
   display: inline-block;
 }
 
-
-
-#footer-contato {
-  width: 100%;
+footer .col-lg-5, .col-lg-6{
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
 }
