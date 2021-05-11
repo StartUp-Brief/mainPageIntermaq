@@ -32,6 +32,8 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
     />
+
+
   </head>
 
   <body class="body">
@@ -41,8 +43,8 @@
           <img class="logo" src="../Assets/img/Logo.png" style="height: 80px" />
 
           <div class="financiamento">
-            <h2>Financiamento</h2>
-            <img src="../Assets/img/Bndes-financiamento.jpg" class="bndes" alt="">
+            <img src="../Assets/img/cartao-de-credito-do-bndes.jpg" alt="" style="height: 80px" >
+            <img src="../Assets/img/Bndes-financiamento.jpg" class="bndes" alt="" style="height: 60px">
           </div>
 
           <img src="../Assets/img/bars-solid.png" class="response bars"data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></img>
@@ -98,12 +100,17 @@
        
 
         <fieldset id="contato">
-          <legend id="titulo-contato"><h1>Envie-nos uma mensagem</h1></legend>
+          <legend id="titulo-contato"><h1>Peça já sua cotação</h1></legend>
           <form action="">
             <div class="bloco-input">
-              <label for="assunto">Assunto ou produto que deseja</label>
+              <label for="assunto">Nome do produto que deseja ou assunto tratado</label>
               <input id="assunto" type="text" name="assunto" id="assunto" />
+
+              <br>
+              <label for="celular">Celular para contato</label>
+              <input type="tel" name="celular" id="celular" placeholder="(11)99999-9999" maxlength="15">
             </div>
+            
 
             <div>
               <label for="mensagem">Mensagem</label>
@@ -274,16 +281,45 @@
 
 
 <script>
+
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+}
+window.onload = function(){
+	document.getElementById('celular').onkeyup = function(){
+		mascara( this, mtel );
+	}
+}
+
+
+
+
+  
   function criarUrl() {
     let assunto = document.getElementById("assunto").value;
     let mensagem = document.getElementById("mensagem").value;
+    let celular = document.getElementById("celular").value;
+
+
     console.log(assunto + mensagem);
 
-    if (assunto !== "" || mensagem !== "") {
+    if (assunto !== "" && celular !=="" && mensagem !== "") {
       let url =
         "mailto:contato@intermaqdobrasil.com.br?subject=" +
         assunto +
         "&body=" +
+        celular+
         mensagem;
       console.log(url);
       window.location.href = url;
