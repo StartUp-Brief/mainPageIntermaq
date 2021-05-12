@@ -37,53 +37,14 @@
   
 }
 
-#contato label {
-  display: block;
-  text-align: center;
-  font-size: larger;
-
-}
-
-#contato input,
-textarea {
-  margin-bottom: 20px;
-  border-radius: 15px;
-}
-
-input {
-  width: 300px;
-}
-
-textarea {
-  width: 100%;
-  resize: none;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: no-repeat;
-}
-
 #contato button{
-  border: none;
-  background:#215baa;
-  padding: 5px;
-  color: aliceblue;
-  font-size: larger;
-  margin-bottom: 10px;
-  transition: all ease 0.2s;
+  margin: 10px 0;
 }
 #contato button:hover{
-  padding: 10px;
-  transition: all ease 0.3s;
+
   font-weight: bolder;
 }
-#contato button:active{
-  background:#3caa21;
-}
 
-.bloco-input {
-  display: inline-block;
-  width: 100%;
-}
 
 #contato-info h1 {
   text-align: center;

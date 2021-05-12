@@ -24,6 +24,10 @@ h2{
 h3{
   font-size: 22px;
 }
+
+.btn-primary{
+  background: #215baa;
+}
 a{
   text-decoration: none;
 }

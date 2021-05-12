@@ -44,22 +44,65 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    
     <script type="text/javascript" src="jquery.hideseek.min.js"></script>
+
+
+    <script src="../Script/cabecalho.js">
+     
+    </script>
   </head>
 
-  <body class="body" >
+  <body>
 
-      <header class="cabecalho">
-        <nav class="menu">
-          <img class="logo" src="../Assets/img/Logo.png" style="height: 80px" />
+      <header class="cabecalho container-fluid">
+        <nav class="menu row">
+          <img class="logo col-sm-2" src="../Assets/img/Logo.png" style="height: 80px; width: 200px;" />
 
-          <div class="financiamento">
+          <div class="financiamento col-sm-6">
             <img src="../Assets/img/cartao-de-credito-do-bndes.jpg" alt="" style="height: 80px" >
             <img src="../Assets/img/Bndes-financiamento.jpg" class="bndes" alt="" style="height: 60px">
           </div>
 
-          <img src="../Assets/img/bars-solid.png" class="response bars"data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></img>
+          <div class="col-md-1">
+            <img src="../Assets/img/bars-solid.png" class="bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></img>
+          </div>
+          
+          <div class="cotacao row justify-content-center">
+              <p>
+               
+                <br>
+                <a class="btn btn-primary d-grid gap-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                 Peça já sua cotação
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="form-floating mb-3 col-md-2">"
+                  <input type="text" class="form-control form-control-sm" placeholder="coloque o nome do produto ou o assunto que deseja" id="Nome" >
+                  <label for="Nome">Nome</label>
+                </div>
+                 <div class="form-floating mb-3 col-md-2">
+                  <input type="text" class="form-control form-control-sm" id="Celular" placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
+                  <label for="Celular">Celular com o DDD</label>
+                </div>
+
+                <div class="form-floating mb-3 col-md-2">
+                  <input type="text" class="form-control form-control-sm" id="Assunto" placeholder="coloque o nome do produto ou o assunto que deseja">
+                  <label for="Assuunto">Produto desejado</label>
+                </div>
+
+                <div class="form-floating col-md-6">
+                  <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem" id="Mensagem"></textarea>
+                  <label for="Mensagem">Mensagem</label>
+                </div>
+                <div>
+                  <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
+                    Enviar
+                  </button>
+                </div>
+
+              </div>
+          </div>
+
         </nav>
 
 
@@ -92,8 +135,8 @@
               </ul>
             </div>
       </header>
-
-
+      <br>
+      <br>
       <br>
       <br>
      
