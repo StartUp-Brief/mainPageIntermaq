@@ -5,9 +5,11 @@ footer {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: auto;
   width: 100%;
+  
 }
 footer .footer-corpo {
   background: rgb(33, 91, 170);
+  padding-top:10px ;
 }
 footer p {
   font-size: larger;

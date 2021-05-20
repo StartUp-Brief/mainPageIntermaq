@@ -74,7 +74,13 @@
 
 @media screen and (max-width: 850px){
  
-  .menu .logo{
+  .menu .bndes, .menu #cartoes{
     display: none;
+  }
+  .menu{
+    text-align: center;
+  }
+  .menu .logo{
+    text-align: center;
   }
 }
