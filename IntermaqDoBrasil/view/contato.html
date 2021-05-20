@@ -1,338 +1,334 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 
 
-    <title>Intermaq</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- fav icon -->
-    <link rel="shortcut icon" href="../Assets/img/fav-ico.png" />
+  <title>Intermaq</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- fav icon -->
+  <link rel="shortcut icon" href="../Assets/img/fav-ico.png" />
 
-    <!-- Links css -->
-    <link rel="stylesheet" href="../Style/Contato/Contato.css" />
-    <link rel="stylesheet" href="../Style/Style.css" />
+  <!-- Links css -->
+  <link rel="stylesheet" href="../Style/Contato/Contato.css" />
+  <link rel="stylesheet" href="../Style/Style.css" />
 
-    <!-- Header css -->
-    <link href="../Style/menu/menu__item.css" rel="stylesheet" />
-    <link href="../Style/menu/menu__link.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../Style/menu/menu__lista.css" />
-    <link rel="stylesheet" href="../Style/menu/cabecalho.css">
-    <link rel="stylesheet" href="../Style/menu/menu.css">
+  <!-- Header css -->
+  <link href="../Style/menu/menu__item.css" rel="stylesheet" />
+  <link href="../Style/menu/menu__link.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../Style/menu/menu__lista.css" />
+  <link rel="stylesheet" href="../Style/menu/cabecalho.css">
+  <link rel="stylesheet" href="../Style/menu/menu.css">
 
-    <!-- footer -->
-    <link rel="stylesheet" href="../Style/footer/footer.css" />
+  <!-- footer -->
+  <link rel="stylesheet" href="../Style/footer/footer.css" />
 
-    <!--Fonte Ubunto  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
-      rel="stylesheet"
-    />
+  <!--Fonte Ubunto  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
 
-     <script src="../Script/cabecalho.js"></script>
-  </head>
+  <script src="../Script/cabecalho.js"></script>
+</head>
 
-  <body >
-    <div id="site">
-      <header class="cabecalho container-fluid">
-        <nav class="menu row">
-          <img class="logo col-sm-2" src="../Assets/img/Logo.png" style="height: 80px; width: 200px;" />
+<body>
+  <div id="site">
+    <header class="cabecalho container-fluid">
+      <nav class="menu row">
+        <img class="logo col-sm-2" src="../Assets/img/Logo.png" style="height: 80px; width: 200px;" />
 
-          <div class="financiamento col-sm-6">
-            <img src="../Assets/img/cartao-de-credito-do-bndes.jpg" alt="" style="height: 80px" >
-            <img src="../Assets/img/Bndes-financiamento.jpg" class="bndes" alt="" style="height: 60px">
-             <img src="../Assets/img/finame-logo.jpg" alt="" style="height: 100px">
-          </div>
-
-          <div class="col-md-1">
-            <img src="../Assets/img/bars-solid.png" class="bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></img>
-          </div>
-          
-          <div class="cotacao row justify-content-center">
-              <p>
-               
-                <br>
-                <a class="btn btn-scondary disabled d-grid gap-2" aria-disabled="true"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                 Peça já sua cotação
-                </a>
-              </p>
-              <div class="collapse" id="collapseExample">
-                <div class="form-floating mb-3 col-md-2">
-                  <input type="text" class="form-control form-control-sm" placeholder="coloque o nome do produto ou o assunto que deseja" id="Nome" >
-                  <label for="Nome">Nome</label>
-                </div>
-                 <div class="form-floating mb-3 col-md-2">
-                  <input type="text" class="form-control form-control-sm" id="Celular" placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
-                  <label for="Celular">Celular com o DDD</label>
-                </div>
-
-                <div class="form-floating mb-3 col-md-2">
-                  <input type="text" class="form-control form-control-sm" id="Assunto" placeholder="coloque o nome do produto ou o assunto que deseja">
-                  <label for="Assuunto">Produto desejado</label>
-                </div>
-
-                <div class="form-floating col-md-6">
-                  <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem" id="Mensagem"></textarea>
-                  <label for="Mensagem">Mensagem</label>
-                </div>
-                <div>
-                  <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
-                    Enviar
-                  </button>
-                </div>
-
-              </div>
-          </div>
-
-        </nav>
-
-
-           <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-             <div class="offcanvas-header">
-
-                <img class="logo" src="../Assets/img/Logo.png" style="height: 80px" />
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-             </div>
-
-              <div class="offcanvas-body">
-
-              <ul class="left-lista">
-                <li class="left__item">
-                  <a class="left__link ativo" href="./index.html">Início</a>
-                </li>
-                <li class="left__item">
-                  <a class="left__link" href="#produtos">Produtos</a>
-                </li>
-                <li class="left__item">
-                  <a class="left__link" href="#">Importação</a>
-                </li>
-                <li class="left__item">
-                  <a class="left__link" href="./contato.html">Contato</a>
-                </li>
-                <li class="left__item">
-                  <a class="left__link" href="#aboutUs">Sobre nós</a>
-                </li>
-              </ul>
-            </div>
-      </header>
-      <br>
-      <br>
-      <br>
-      <br>
-
-      <hr />
-      <div id="box-contato">
-       
-
-        <fieldset id="contato">
-          <legend id="titulo-contato"><h1>Peça já sua cotação</h1></legend>
-          <form action="">
-            <div class="form-floating mb-3 col-md-12">
-                  <input type="text" class="form-control form-control-sm" placeholder="coloque o nome do produto ou o assunto que deseja" id="nome" >
-                  <label for="nome">Nome</label>
-                </div>
-                 <div class="form-floating mb-3 col-md-12">
-                  <input type="text" class="form-control form-control-sm" id="celular" placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
-                  <label for="Celular">Celular com o DDD</label>
-                </div>
-
-                <div class="form-floating mb-3 col-md-12">
-                  <input type="text" class="form-control form-control-sm" id="assunto" placeholder="coloque o nome do produto ou o assunto que deseja">
-                  <label for="Assuunto">Produto desejado</label>
-                </div>
-
-                <div class="form-floating col-md-12">
-                  <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem" id="mensagem"></textarea>
-                  <label for="mensagem">Mensagem</label>
-                </div>
-                <div>
-                  <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
-                    Enviar
-                  </button>
-                </div>
-          </form>
-        </fieldset>
-
-        <section class="mapa">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6884667222557!2d-46.6077819!3d-23.5437048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5926a84a0dcb%3A0x9f7b26aeca48cc9b!2sIntermaq%20do%20Brasil%20M%C3%A1quinas%20e%20Mat%C3%A9rias%20Primas!5e0!3m2!1spt-BR!2sbr!4v1618593496058!5m2!1spt-BR!2sbr"
-            width="600"
-            height="450"
-          ></iframe>
-        </section>
-
-        
-
-        <div id="contato-info">
-          <h1>Entre em contato diretamente com o nosso setor comercial</h1>
+        <div class="financiamento col-sm-6">
+          <img src="../Assets/img/cartao-de-credito-do-bndes.jpg" alt="" style="height: 80px">
+          <img src="../Assets/img/Bndes-financiamento.jpg" class="bndes" alt="" style="height: 60px">
+          <img src="../Assets/img/finame-logo.jpg" alt="" style="height: 100px">
         </div>
 
-        <div class="contato-cards">
-          <div class="contato-card">
-            <div class="img-box">
-              <img src="../Assets/img/icones/price.png" alt="preços" />
+        <div class="col-md-1">
+          <img src="../Assets/img/bars-solid.png" class="bars" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></img>
+        </div>
+
+        <div class="cotacao row justify-content-center">
+          <p>
+
+            <br>
+            <a class="btn btn-scondary disabled d-grid gap-2" aria-disabled="true" data-bs-toggle="collapse"
+              href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Peça já sua cotação
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="form-floating mb-3 col-md-2">
+              <input type="text" class="form-control form-control-sm"
+                placeholder="coloque o nome do produto ou o assunto que deseja" id="Nome">
+              <label for="Nome">Nome</label>
+            </div>
+            <div class="form-floating mb-3 col-md-2">
+              <input type="text" class="form-control form-control-sm" id="Celular"
+                placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
+              <label for="Celular">Celular com o DDD</label>
             </div>
 
-            <h2> Preços</h2>
-            <p class="nome">Pergunte a respeito dos nossos preços com nossos funcionários. </p>
-          </div>
-
-          <div class="contato-card">
-            <div class="img-box">
-              <img src="../Assets/img/icones/services.png" alt="serviços" />
+            <div class="form-floating mb-3 col-md-2">
+              <input type="text" class="form-control form-control-sm" id="Assunto"
+                placeholder="coloque o nome do produto ou o assunto que deseja">
+              <label for="Assuunto">Produto desejado</label>
             </div>
 
-            <h2>Serviços</h2>
-            <p class="nome">Caso precise de manutenção em algum dos nossos produtos, nos envie um e-mail.</p>
-          </div>
-
-          <div class="contato-card">
-            <div class="img-box">
-              <img src="../Assets/img/icones/products.png" alt="produtos" />
+            <div class="form-floating col-md-6">
+              <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem" id="Mensagem"></textarea>
+              <label for="Mensagem">Mensagem</label>
+            </div>
+            <div>
+              <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
+                Enviar
+              </button>
             </div>
 
-            <h2>Prdutos</h2>
-            <p class="nome">Caso tenha se interessado por um ou mais de nossos produtos, fique a vontade para tirar quais quer duvida que tiver.</p>
           </div>
         </div>
+
+      </nav>
+
+
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+
+          <img class="logo" src="../Assets/img/Logo.png" style="height: 80px" />
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+          <ul class="left-lista">
+            <li class="left__item">
+              <a class="left__link ativo" href="./index.html">Início</a>
+            </li>
+            <li class="left__item">
+              <a class="left__link" href="#produtos">Produtos</a>
+            </li>
+            <li class="left__item">
+              <a class="left__link" href="#">Importação</a>
+            </li>
+            <li class="left__item">
+              <a class="left__link" href="./contato.html">Contato</a>
+            </li>
+            <li class="left__item">
+              <a class="left__link" href="#aboutUs">Sobre nós</a>
+            </li>
+          </ul>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <hr />
+    <div id="box-contato">
+
+
+      <fieldset id="contato">
+        <legend id="titulo-contato">
+          <h1>Peça já sua cotação</h1>
+        </legend>
+        <form action="">
+          <div class="form-floating mb-3 col-md-12">
+            <input type="text" class="form-control form-control-sm"
+              placeholder="coloque o nome do produto ou o assunto que deseja" id="nome">
+            <label for="nome">Nome</label>
+          </div>
+          <div class="form-floating mb-3 col-md-12">
+            <input type="text" class="form-control form-control-sm" id="celular"
+              placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
+            <label for="Celular">Celular com o DDD</label>
+          </div>
+
+          <div class="form-floating mb-3 col-md-12">
+            <input type="text" class="form-control form-control-sm" id="assunto"
+              placeholder="coloque o nome do produto ou o assunto que deseja">
+            <label for="Assuunto">Produto desejado</label>
+          </div>
+
+          <div class="form-floating col-md-12">
+            <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem" id="mensagem"></textarea>
+            <label for="mensagem">Mensagem</label>
+          </div>
+          <div>
+            <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </fieldset>
+
+      <section class="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6884667222557!2d-46.6077819!3d-23.5437048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5926a84a0dcb%3A0x9f7b26aeca48cc9b!2sIntermaq%20do%20Brasil%20M%C3%A1quinas%20e%20Mat%C3%A9rias%20Primas!5e0!3m2!1spt-BR!2sbr!4v1618593496058!5m2!1spt-BR!2sbr"
+          width="600" height="450"></iframe>
+      </section>
+
+
+
+      <div id="contato-info">
+        <h1>Entre em contato diretamente com o nosso setor comercial</h1>
       </div>
 
-      <br>
-      <div class="contato-numeros">
-        <div class="telefones">
-          <a href="https://api.whatsapp.com/send?phone=5511941101919">
-            <div class="numero">
-              <img src="../Assets/img/Whats.png" alt="">
-              <p> +55(11)94110-1919</p>
-            </div>
-          </a>
-          
-          <a href="https://api.whatsapp.com/send?phone=5511932492230">
-            <div class="numero">
-              <img src="../Assets/img/Whats.png" alt="">
-              <p> +55(11)93249-2230</p>
-            </div>
-          </a>
-          
-          <a href="https://api.whatsapp.com/send?phone=5511995114050">
-            <div class="numero">
-              <img src="../Assets/img/Whats.png" alt="">
-              <p> +55(11)99511-4050</p>
-            </div>
-          </a>
-          
+      <div class="contato-cards">
+        <div class="contato-card">
+          <div class="img-box">
+            <img src="../Assets/img/icones/price.png" alt="preços" />
+          </div>
 
-        </div>  
-        <div class="telefones">
-          <div class="numero">
-            <img src="../Assets/img/icones/telphone.png " alt="">
-            <p> (11)2291-3011 </p>
-          </div>
-          <div class="numero">
-            <img src="../Assets/img/icones/telphone.png " alt="">
-            <p> (11)2081-0965 </p>
-          </div>
-          <div class="numero">
-            <img src="../Assets/img/icones/telphone.png " alt="">
-            <p> (11)2291-7670 </p>
-          </div>
-          <div class="numero">
-            <img src="../Assets/img/icones/telphone.png " alt="">
-            <p> (11)2694-4705 </p>
-          </div>
+          <h2> Preços</h2>
+          <p class="nome">Pergunte a respeito dos nossos preços com nossos funcionários. </p>
         </div>
-        <br>
 
+        <div class="contato-card">
+          <div class="img-box">
+            <img src="../Assets/img/icones/services.png" alt="serviços" />
+          </div>
+
+          <h2>Serviços</h2>
+          <p class="nome">Caso precise de manutenção em algum dos nossos produtos, nos envie um e-mail.</p>
+        </div>
+
+        <div class="contato-card">
+          <div class="img-box">
+            <img src="../Assets/img/icones/products.png" alt="produtos" />
+          </div>
+
+          <h2>Prdutos</h2>
+          <p class="nome">Caso tenha se interessado por um ou mais de nossos produtos, fique a vontade para tirar quais
+            quer duvida que tiver.</p>
+        </div>
       </div>
-
-      <footer>
-        <div class="footer-corpo row justify-content-center">
-          <div class="col-lg-5 ">
-            <h3>Endereco</h3>
-            <p>
-              Rua: Coronel Antônio Marcelo, 220 - Brás São Paulo / SP - CEP:
-              03054-040
-            </p>
-          </div>
-
-          <div class="col-lg-6">
-            <h3>Contato</h3>
-            <div class="redes-sociais-container">
-              <a href="">
-                <img
-                  class="redes-sociais"
-                  src="../Assets/img/Whats.png"
-                  alt=""
-                />
-                <p>(11)99511-4050</p>
-              </a>
-            </div>
-            <div class="redes-sociais-container">
-              <a href="">
-                <img
-                  class="redes-sociais"
-                  src="../Assets/img/face.png"
-                  alt=""
-                />
-                <p>Facebook</p>
-              </a>
-            </div>
-            <div class="redes-sociais-container">
-              <a href="">
-                <img
-                  class="redes-sociais"
-                  src="../Assets/img/linkedin.png"
-                  alt=""
-                />
-                <p>linkedin</p>
-              </a>
-            </div>
-
-            <div class="redes-sociais-container">
-              <a href="">
-                <img
-                  class="redes-sociais"
-                  src="../Assets/img/email.png"
-                  alt=""
-                />
-                <p>contato@intermaqdobrasil.com.br</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
-  </body>
+
+    <br>
+    <div class="contato-numeros">
+      <div class="telefones">
+        <a href="https://api.whatsapp.com/send?phone=5511941101919">
+          <div class="numero">
+            <img src="../Assets/img/Whats.png" alt="">
+            <p> +55(11)94110-1919</p>
+          </div>
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=5511932492230">
+          <div class="numero">
+            <img src="../Assets/img/Whats.png" alt="">
+            <p> +55(11)93249-2230</p>
+          </div>
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=5511995114050">
+          <div class="numero">
+            <img src="../Assets/img/Whats.png" alt="">
+            <p> +55(11)99511-4050</p>
+          </div>
+        </a>
+
+
+      </div>
+      <div class="telefones">
+        <div class="numero">
+          <img src="../Assets/img/icones/telphone.png " alt="">
+          <p> (11)2291-3011 </p>
+        </div>
+        <div class="numero">
+          <img src="../Assets/img/icones/telphone.png " alt="">
+          <p> (11)2081-0965 </p>
+        </div>
+        <div class="numero">
+          <img src="../Assets/img/icones/telphone.png " alt="">
+          <p> (11)2291-7670 </p>
+        </div>
+        <div class="numero">
+          <img src="../Assets/img/icones/telphone.png " alt="">
+          <p> (11)2694-4705 </p>
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+    <footer>
+      <div class="footer-corpo row justify-content-center">
+        <div class="col-lg-5 ">
+          <h3>Endereco</h3>
+          <p>
+            Rua: Coronel Antônio Marcelo, 220 - Brás São Paulo / SP - CEP:
+            03054-040
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <h3>Contato</h3>
+          <div class="redes-sociais-container">
+            <a href="">
+              <img class="redes-sociais" src="../Assets/img/Whats.png" alt="" />
+              <p>(11)99511-4050</p>
+            </a>
+          </div>
+          <div class="redes-sociais-container">
+            <a href="">
+              <img class="redes-sociais" src="../Assets/img/face.png" alt="" />
+              <p>Facebook</p>
+            </a>
+          </div>
+          <div class="redes-sociais-container">
+            <a href="">
+              <img class="redes-sociais" src="../Assets/img/linkedin.png" alt="" />
+              <p>linkedin</p>
+            </a>
+          </div>
+
+          <div class="redes-sociais-container">
+            <a href="">
+              <img class="redes-sociais" src="../Assets/img/email.png" alt="" />
+              <p>contato@intermaqdobrasil.com.br</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
 
 
 
 <script>
 
-function mascara(o,f){
-    v_obj=o
-    v_fun=f
-    setTimeout("execmascara()",1)
-}
-function execmascara(){
-    v_obj.value=v_fun(v_obj.value)
-}
-function mtel(v){
-    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
-    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+  function mascara(o, f) {
+    v_obj = o
+    v_fun = f
+    setTimeout("execmascara()", 1)
+  }
+  function execmascara() {
+    v_obj.value = v_fun(v_obj.value)
+  }
+  function mtel(v) {
+    v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+    v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
     return v;
-}
-window.onload = function(){
-	document.getElementById('celular').onkeyup = function(){
-		mascara( this, mtel );
-	}
-}
+  }
+  window.onload = function () {
+    document.getElementById('celular').onkeyup = function () {
+      mascara(this, mtel);
+    }
+  }
 
   function criarUrl() {
     let nome = document.getElementById("nome").value;
@@ -343,20 +339,20 @@ window.onload = function(){
 
     console.log(assunto + mensagem);
 
-    if (assunto !== "" && nome !== "" && celular !=="" && mensagem !== "") {
+    if (assunto !== "" && nome !== "" && celular !== "" && mensagem !== "") {
       let url =
         "mailto:contato@intermaqdobrasil.com.br?subject=" +
         assunto +
         "&body=" + " Nome: " +
-        nome + " Celular: " +
-        celular+ " Conteudo: " +
+        nome + "%0D%0A" + " Celular: " +
+        celular + "%0D%0A" + " Conteudo: " +
         mensagem;
       console.log(url);
       window.location.href = url;
-    }else{
+    } else {
       alert("Por favor preencha todos os campos");
     }
-    
-    
+
+
   }
 </script>

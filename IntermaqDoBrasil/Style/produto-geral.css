@@ -1,0 +1,53 @@
+.img-produtos {
+    width: fit-content;
+    height: fit-content;
+}
+.carousel-control-prev{
+    background: #215baa;
+   
+}
+.carousel-control-next{
+    background: #215baa;
+   
+}
+.carousel-inner{
+    width: fit-content;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.col-lg-5{
+    margin: 10px;
+    vertical-align: middle;
+}
+h1{
+    color: #215baa;
+}
+.produto-banner{
+    justify-content: center;
+    text-align: center;
+}
+
+#produto-nome{
+    text-align: left
+}
+
+p{
+    text-align: justify;
+}
+
+.produto-contato-titulo{
+    margin: 20px 0;
+}
+
+.produto-contato{
+    justify-content: center;
+    text-align: center;
+}
+
+#cotacaoEnviar{
+    margin: 15px;
+}

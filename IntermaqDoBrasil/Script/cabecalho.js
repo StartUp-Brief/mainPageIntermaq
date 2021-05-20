@@ -31,7 +31,7 @@ function criarUrl() {
             "mailto:contato@intermaqdobrasil.com.br?subject=" +
             assunto +
             "&body=" + "Celular: " +
-            celular + "  " + "Nome: " + nome + "   " + "Conteúdo: " + mensagem;
+            celular + "%0D%0A" + "Nome: " + nome + "%0D%0A" + "Conteúdo: " + mensagem;
 
         console.log(url);
         window.location.href = url;
