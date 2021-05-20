@@ -41,12 +41,15 @@
   <div id="site">
     <header class="cabecalho container-fluid">
       <nav class="menu row">
-        <img class="logo col-sm-2" src="../Assets/img/Logo.png" style="height: 80px; width: 200px;" />
+        <img class="logo col-sm-2" src="../Assets/img/Logo.png" style="height: 100px; width: 220px;" />
 
-        <div class="financiamento col-sm-6">
-          <img src="../Assets/img/cartao-de-credito-do-bndes.jpg" alt="" style="height: 80px">
-          <img src="../Assets/img/Bndes-financiamento.jpg" class="bndes" alt="" style="height: 60px">
-          <img src="../Assets/img/finame-logo.jpg" alt="" style="height: 100px">
+        <div class="financiamento col-sm-4">
+
+          <img src="../Assets/img/Bndes-financiamento.png" class="bndes" alt="" style="height: 120px; width: 180px;">
+
+        </div>
+        <div class="col-sm-3" id="cartoes">
+          <img src="../Assets/img/bandeira-dos-cartoes-de-credito.png" alt="" style="height: 100px">
         </div>
 
         <div class="col-md-1">
@@ -95,239 +98,218 @@
         </div>
 
       </nav>
-      <ul class="left-lista">
-        <li class="left__item">
-          <a class="left__link ativo" href="./index.html">Início</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="#produtos">Produtos</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="#">Importação</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="./contato.html">Contato</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="#aboutUs">Sobre nós</a>
-        </li>
-        <li class="left__item">
-          <a class="btn btn-primary left__link" href="../Assets/Catalogos/catalogo.jpeg"
-            download="Catalogo">Catálogo</a>
-        </li>
-      </ul>
-  </div>
-  </header>
-  <br>
-  <br>
-  <br>
-  <br>
-  >>>>>>> 724d56f2d6fafa93caf0e78174eddbd4c9ab4fd5
 
-  <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-    id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    <div class="offcanvas-header">
-
-      <img class="logo" src="../Assets/img/Logo.png" style="height: 80px" />
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-    </div>
-
-    <div class="offcanvas-body">
-
-      <ul class="left-lista">
-        <li class="left__item">
-          <a class="left__link ativo" href="./index.html">Início</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="#produtos">Produtos</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="#">Importação</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="./contato.html">Contato</a>
-        </li>
-        <li class="left__item">
-          <a class="left__link" href="#aboutUs">Sobre nós</a>
-        </li>
-      </ul>
-    </div>
     </header>
     <br>
     <br>
     <br>
     <br>
 
-    <hr />
-    <div id="box-contato">
 
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
 
-      <fieldset id="contato">
-        <legend id="titulo-contato">
-          <h1>Peça já sua cotação</h1>
-        </legend>
-        <form action="">
-          <div class="form-floating mb-3 col-md-12">
-            <input type="text" class="form-control form-control-sm"
-              placeholder="coloque o nome do produto ou o assunto que deseja" id="nome">
-            <label for="nome">Nome</label>
-          </div>
-          <div class="form-floating mb-3 col-md-12">
-            <input type="text" class="form-control form-control-sm" id="celular"
-              placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
-            <label for="Celular">Celular com o DDD</label>
-          </div>
+        <img class="logo" src="../Assets/img/Logo.png" style="height: 80px" />
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
-          <div class="form-floating mb-3 col-md-12">
-            <input type="text" class="form-control form-control-sm" id="assunto"
-              placeholder="coloque o nome do produto ou o assunto que deseja">
-            <label for="Assuunto">Produto desejado</label>
-          </div>
-
-          <div class="form-floating col-md-12">
-            <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem" id="mensagem"></textarea>
-            <label for="mensagem">Mensagem</label>
-          </div>
-          <div>
-            <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
-              Enviar
-            </button>
-          </div>
-        </form>
-      </fieldset>
-
-      <section class="mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6884667222557!2d-46.6077819!3d-23.5437048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5926a84a0dcb%3A0x9f7b26aeca48cc9b!2sIntermaq%20do%20Brasil%20M%C3%A1quinas%20e%20Mat%C3%A9rias%20Primas!5e0!3m2!1spt-BR!2sbr!4v1618593496058!5m2!1spt-BR!2sbr"
-          width="600" height="450"></iframe>
-      </section>
-
-
-
-      <div id="contato-info">
-        <h1>Entre em contato diretamente com o nosso setor comercial</h1>
       </div>
 
-      <div class="contato-cards">
-        <div class="contato-card">
-          <div class="img-box">
-            <img src="../Assets/img/icones/price.png" alt="preços" />
-          </div>
-
-          <h2> Preços</h2>
-          <p class="nome">Pergunte a respeito dos nossos preços com nossos funcionários. </p>
-        </div>
-
-        <div class="contato-card">
-          <div class="img-box">
-            <img src="../Assets/img/icones/services.png" alt="serviços" />
-          </div>
-
-          <h2>Serviços</h2>
-          <p class="nome">Caso precise de manutenção em algum dos nossos produtos, nos envie um e-mail.</p>
-        </div>
-
-        <div class="contato-card">
-          <div class="img-box">
-            <img src="../Assets/img/icones/products.png" alt="produtos" />
-          </div>
-
-          <h2>Prdutos</h2>
-          <p class="nome">Caso tenha se interessado por um ou mais de nossos produtos, fique a vontade para tirar quais
-            quer duvida que tiver.</p>
-        </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li class="left__item">
+            <a class="left__link ativo" href="./index.html">Início</a>
+          </li>
+          <li class="left__item">
+            <a class="left__link" href="#produtos">Produtos</a>
+          </li>
+          <li class="left__item">
+            <a class="left__link" href="#">Importação</a>
+          </li>
+          <li class="left__item">
+            <a class="left__link" href="./contato.html">Contato</a>
+          </li>
+          <li class="left__item">
+            <a class="left__link" href="#aboutUs">Sobre nós</a>
+          </li>
+          <li class="left__item">
+            <a class="btn btn-primary left__link" href="../Assets/Catalogos/catalogo.jpeg"
+              download="Catalogo">Catálogo</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
+  </header>
 
+  <div id="box-contato">
+
+
+    <fieldset id="contato">
+      <legend id="titulo-contato">
+        <h1>Peça já sua cotação</h1>
+      </legend>
+      <form action="">
+        <div class="form-floating mb-3 col-md-12">
+          <input type="text" class="form-control form-control-sm"
+            placeholder="coloque o nome do produto ou o assunto que deseja" id="nome">
+          <label for="nome">Nome</label>
+        </div>
+        <div class="form-floating mb-3 col-md-12">
+          <input type="text" class="form-control form-control-sm" id="celular"
+            placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
+          <label for="Celular">Celular com o DDD</label>
+        </div>
+
+        <div class="form-floating mb-3 col-md-12">
+          <input type="text" class="form-control form-control-sm" id="assunto"
+            placeholder="coloque o nome do produto ou o assunto que deseja">
+          <label for="Assuunto">Produto desejado</label>
+        </div>
+
+        <div class="form-floating col-md-12">
+          <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem" id="mensagem"></textarea>
+          <label for="mensagem">Mensagem</label>
+        </div>
+        <div>
+          <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </fieldset>
+
+    <section class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6884667222557!2d-46.6077819!3d-23.5437048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5926a84a0dcb%3A0x9f7b26aeca48cc9b!2sIntermaq%20do%20Brasil%20M%C3%A1quinas%20e%20Mat%C3%A9rias%20Primas!5e0!3m2!1spt-BR!2sbr!4v1618593496058!5m2!1spt-BR!2sbr"
+        width="600" height="450"></iframe>
+    </section>
+
+
+
+    <div id="contato-info">
+      <h1>Entre em contato diretamente com o nosso setor comercial</h1>
+    </div>
+
+    <div class="contato-cards">
+      <div class="contato-card">
+        <div class="img-box">
+          <img src="../Assets/img/icones/price.png" alt="preços" />
+        </div>
+
+        <h2> Preços</h2>
+        <p class="nome">Pergunte a respeito dos nossos preços com nossos funcionários. </p>
+      </div>
+
+      <div class="contato-card">
+        <div class="img-box">
+          <img src="../Assets/img/icones/services.png" alt="serviços" />
+        </div>
+
+        <h2>Serviços</h2>
+        <p class="nome">Caso precise de manutenção em algum dos nossos produtos, nos envie um e-mail.</p>
+      </div>
+
+      <div class="contato-card">
+        <div class="img-box">
+          <img src="../Assets/img/icones/products.png" alt="produtos" />
+        </div>
+
+        <h2>Prdutos</h2>
+        <p class="nome">Caso tenha se interessado por um ou mais de nossos produtos, fique a vontade para tirar quais
+          quer duvida que tiver.</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="contato-numeros">
+    <div class="telefones">
+      <a href="https://api.whatsapp.com/send?phone=5511941101919">
+        <div class="numero">
+          <img src="../Assets/img/Whats.png" alt="">
+          <p> +55(11)94110-1919</p>
+        </div>
+      </a>
+
+      <a href="https://api.whatsapp.com/send?phone=5511932492230">
+        <div class="numero">
+          <img src="../Assets/img/Whats.png" alt="">
+          <p> +55(11)93249-2230</p>
+        </div>
+      </a>
+
+      <a href="https://api.whatsapp.com/send?phone=5511995114050">
+        <div class="numero">
+          <img src="../Assets/img/Whats.png" alt="">
+          <p> +55(11)99511-4050</p>
+        </div>
+      </a>
+
+
+    </div>
+    <div class="telefones">
+      <div class="numero">
+        <img src="../Assets/img/icones/telphone.png " alt="">
+        <p> (11)2291-3011 </p>
+      </div>
+      <div class="numero">
+        <img src="../Assets/img/icones/telphone.png " alt="">
+        <p> (11)2081-0965 </p>
+      </div>
+      <div class="numero">
+        <img src="../Assets/img/icones/telphone.png " alt="">
+        <p> (11)2291-7670 </p>
+      </div>
+      <div class="numero">
+        <img src="../Assets/img/icones/telphone.png " alt="">
+        <p> (11)2694-4705 </p>
+      </div>
+    </div>
     <br>
-    <div class="contato-numeros">
-      <div class="telefones">
-        <a href="https://api.whatsapp.com/send?phone=5511941101919">
-          <div class="numero">
-            <img src="../Assets/img/Whats.png" alt="">
-            <p> +55(11)94110-1919</p>
-          </div>
-        </a>
 
-        <a href="https://api.whatsapp.com/send?phone=5511932492230">
-          <div class="numero">
-            <img src="../Assets/img/Whats.png" alt="">
-            <p> +55(11)93249-2230</p>
-          </div>
-        </a>
+  </div>
 
-        <a href="https://api.whatsapp.com/send?phone=5511995114050">
-          <div class="numero">
-            <img src="../Assets/img/Whats.png" alt="">
-            <p> +55(11)99511-4050</p>
-          </div>
-        </a>
-
-
+  <footer>
+    <div class="footer-corpo row justify-content-center">
+      <div class="col-lg-5 ">
+        <h3>Endereco</h3>
+        <p>
+          Rua: Coronel Antônio Marcelo, 220 - Brás São Paulo / SP - CEP:
+          03054-040
+        </p>
       </div>
-      <div class="telefones">
-        <div class="numero">
-          <img src="../Assets/img/icones/telphone.png " alt="">
-          <p> (11)2291-3011 </p>
+
+      <div class="col-lg-6">
+        <h3>Contato</h3>
+        <div class="redes-sociais-container">
+          <a href="">
+            <img class="redes-sociais" src="../Assets/img/Whats.png" alt="" />
+            <p>(11)99511-4050</p>
+          </a>
         </div>
-        <div class="numero">
-          <img src="../Assets/img/icones/telphone.png " alt="">
-          <p> (11)2081-0965 </p>
+        <div class="redes-sociais-container">
+          <a href="">
+            <img class="redes-sociais" src="../Assets/img/face.png" alt="" />
+            <p>Facebook</p>
+          </a>
         </div>
-        <div class="numero">
-          <img src="../Assets/img/icones/telphone.png " alt="">
-          <p> (11)2291-7670 </p>
+        <div class="redes-sociais-container">
+          <a href="">
+            <img class="redes-sociais" src="../Assets/img/linkedin.png" alt="" />
+            <p>linkedin</p>
+          </a>
         </div>
-        <div class="numero">
-          <img src="../Assets/img/icones/telphone.png " alt="">
-          <p> (11)2694-4705 </p>
+
+        <div class="redes-sociais-container">
+          <a href="">
+            <img class="redes-sociais" src="../Assets/img/email.png" alt="" />
+            <p>contato@intermaqdobrasil.com.br</p>
+          </a>
         </div>
       </div>
-      <br>
-
     </div>
-
-    <footer>
-      <div class="footer-corpo row justify-content-center">
-        <div class="col-lg-5 ">
-          <h3>Endereco</h3>
-          <p>
-            Rua: Coronel Antônio Marcelo, 220 - Brás São Paulo / SP - CEP:
-            03054-040
-          </p>
-        </div>
-
-        <div class="col-lg-6">
-          <h3>Contato</h3>
-          <div class="redes-sociais-container">
-            <a href="">
-              <img class="redes-sociais" src="../Assets/img/Whats.png" alt="" />
-              <p>(11)99511-4050</p>
-            </a>
-          </div>
-          <div class="redes-sociais-container">
-            <a href="">
-              <img class="redes-sociais" src="../Assets/img/face.png" alt="" />
-              <p>Facebook</p>
-            </a>
-          </div>
-          <div class="redes-sociais-container">
-            <a href="">
-              <img class="redes-sociais" src="../Assets/img/linkedin.png" alt="" />
-              <p>linkedin</p>
-            </a>
-          </div>
-
-          <div class="redes-sociais-container">
-            <a href="">
-              <img class="redes-sociais" src="../Assets/img/email.png" alt="" />
-              <p>contato@intermaqdobrasil.com.br</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </footer>
   </div>
 </body>
 
