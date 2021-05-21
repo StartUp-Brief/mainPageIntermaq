@@ -3,11 +3,11 @@
     height: fit-content;
 }
 .carousel-control-prev{
-    background: #215baa;
+    background: #215aaa55;
    
 }
 .carousel-control-next{
-    background: #215baa;
+    background: #215aaa55;
    
 }
 .carousel-inner{
@@ -50,4 +50,7 @@ p{
 
 #cotacaoEnviar{
     margin: 15px;
+}
+.carousel-indicators{
+    background: #215baa;
 }

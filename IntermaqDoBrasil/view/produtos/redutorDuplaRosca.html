@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Intermaq</title>
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="../../Assets/img/fav-ico.png" />
+
+    <!-- Cabecalho css -->
+    <link rel="stylesheet" href="../../Style/menu/menu.css">
+    <link rel="stylesheet" href="../../Style/menu/menu__item.css" />
+    <link rel="stylesheet" href="../../Style/menu/menu__link.css" />
+    <link rel="stylesheet" href="../../Style/menu/menu__lista.css" />
+    <link rel="stylesheet" href="../..//Style/menu/cabecalho.css" />
+
+    <!-- footer -->
+    <link rel="stylesheet" href="../../Style/footer/footer.css" />
+
+    <link rel="stylesheet" href="../../Style/Style.css" />
+
+    <link rel="stylesheet" href="../../Style/produto-geral.css">
+    <!--Fonte Ubunto  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.hideseek.min.js"></script>
+
+    <script src="../../Script/cabecalho.js"></script>
+
+</head>
+
+<body>
+
+    <header class="cabecalho container-fluid">
+        <nav class="menu row ">
+            <img class="logo col-sm-2" src="../../Assets/img/Logo.png" style="height: 100px; width: 220px;" />
+
+            <div class="financiamento col-sm-4">
+
+                <img src="../../Assets/img/Bndes-financiamento.png" class="bndes" alt=""
+                    style="height: 120px; width: 180px;">
+
+            </div>
+            <div class="col-sm-3" id="cartoes">
+                <img src="../../Assets/img/bandeira-dos-cartoes-de-credito.png" alt="" style="height: 100px">
+            </div>
+            </div>
+
+            <div class="col-md-1">
+                <img src="../../Assets/img/bars-solid.png" class="bars" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></img>
+            </div>
+
+            <div class="cotacao row justify-content-center">
+                <p>
+
+                    <br>
+                    <a class="btn btn-scondary disabled d-grid gap-2" data-bs-toggle="collapse" href="#collapseExample"
+                        role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Peça já sua cotação
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="form-floating mb-3 col-md-2">
+                        <input type="text" class="form-control form-control-sm"
+                            placeholder="coloque o nome do produto ou o assunto que deseja" id="Nome">
+                        <label for="Nome">Nome</label>
+                    </div>
+                    <div class="form-floating mb-3 col-md-2">
+                        <input type="text" class="form-control form-control-sm" id="Celular"
+                            placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
+                        <label for="Celular">Celular com o DDD</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col-md-2">
+                        <input type="text" class="form-control form-control-sm" id="Assunto"
+                            placeholder="coloque o nome do produto ou o assunto que deseja">
+                        <label for="Assuunto">Produto desejado</label>
+                    </div>
+
+                    <div class="form-floating col-md-6">
+                        <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem"
+                            id="Mensagem"></textarea>
+                        <label for="Mensagem">Mensagem</label>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
+                            Enviar
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+
+                <img class="logo" src="../../Assets/img/Logo.png" style="height: 80px" />
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+
+            </div>
+
+            <div class="offcanvas-body">
+
+                <ul class="left-lista">
+                    <li class="left__item">
+                        <a class="left__link ativo" href="../index.html">Início</a>
+                    </li>
+                    <li class="left__item">
+                        <a class="left__link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="left__item">
+                        <a class="left__link" href="#">Importação</a>
+                    </li>
+                    <li class="left__item">
+                        <a class="left__link" href="../contato.html">Contato</a>
+                    </li>
+                    <li class="left__item">
+                        <a class="left__link" href="#aboutUs">Sobre nós</a>
+                    </li>
+                    <li class="left__item">
+                        <a class="btn btn-primary left__link" href="../../Assets/Catalogos/catalogo.jpeg"
+                            download="Catalogo">Catálogo</a>
+                    </li>
+                </ul>
+    </header>
+
+    <div style="height: 250px;">
+
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1 id="produto-nome">Redutor-Dupla Rosca</h1>
+        </div>
+        <div class="row produto-banner">
+            <div class="col-lg-5">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="img-produtos response">
+                                <img src="../../Assets/Produtos/RedutoDuplaRosca/redutorDuplaRosca_1.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="img-produtos response">
+                                <img src="../../Assets/Produtos/RedutoDuplaRosca/redutorDuplaRosca_2.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item ">
+                            <div class="img-produtos response">
+                                <img src="../../Assets/Produtos/RedutoDuplaRosca/redutorDuplaRosca_3.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-5" style="display: none;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UzeLwSZOkuw?start=5"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <h1>Descrição</h1>
+        </div>
+        <svg id="linha" data-name="Componente 1 – 1" xmlns="http://www.w3.org/2000/svg" width="100%" height="61.075"
+            viewBox="0 0 1920 61.075">
+            <path id="Caminho_1" data-name="Caminho 1" d="M0,122.423H192.312l76.2,46.207L0,169.063Z"
+                transform="translate(0.5 -122.423)" fill="#f13433" />
+            <line id="Linha_1" data-name="Linha 1" x2="1920" transform="translate(0 51.075)" fill="none"
+                stroke="#215baa" stroke-width="20" />
+        </svg>
+        <div class="row description">
+            <p class="col-lg-6">
+                Redutores para conectar em duplas roscas cônicas e paralelas para extrusão e transformação de matéria
+                prima plástica.
+                Nossos redutores durante e após a sua fabricação, são submetido a teste de ajustamento do conjunto
+                mecânico, e
+                simulação, como se estivesse operando em linha de produção.
+                São construídos com materiais especiais e com maquinários apropriados.
+
+                Redutor - Dupla Rosca Conhecida também como: Caixa de Redução
+            </p>
+            <p class="col-lg-5">
+                <strong>Diversas medidas e modelos
+                    .</strong>
+                <img src="../../Assets/img/bandeira-dos-cartoes-de-credito.png" alt="" style="height: 100px">
+                <img src="../../Assets/img/Selo.jpg" alt="" style="height: 150px">
+
+            </p>
+        </div>
+        <div class="row produto-contato-titulo">
+            <h1>Peça sua cotação para este produto</h1>
+        </div>
+        <div class="row produto-contato">
+            <form action="">
+                <div class="form-floating mb-3 col-md-12">
+                    <input type="text" class="form-control form-control-sm"
+                        placeholder="coloque o nome do produto ou o assunto que deseja" id="nome">
+                    <label for="nome">Nome</label>
+                </div>
+                <div class="form-floating mb-3 col-md-12">
+                    <input type="text" class="form-control form-control-sm" id="celular"
+                        placeholder="coloque o nome do produto ou o assunto que deseja" maxlength="15">
+                    <label for="Celular">Celular com o DDD</label>
+                </div>
+
+                <div class="form-floating mb-3 col-md-12">
+                    <input type="text" class="form-control form-control-sm" id="assunto"
+                        placeholder="coloque o nome do produto ou o assunto que deseja">
+                    <label for="Assuunto">Produto desejado</label>
+                </div>
+
+                <div class="form-floating col-md-12">
+                    <textarea class="form-control form-control-sm" placeholder="Deixe sua mensagem"
+                        id="mensagem"></textarea>
+                    <label for="mensagem">Mensagem</label>
+                </div>
+                <div>
+                    <button class="btn btn-primary" id="cotacaoEnviar" onclick="criarUrl()">
+                        Enviar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <footer>
+
+        <div class="footer-corpo row justify-content-center">
+            <div class="col-lg-5">
+                <h3>Endereco</h3>
+                <p>
+                    Rua: Coronel Antônio Marcelo, 220 - Brás São Paulo / SP - CEP:
+                    03054-040
+                </p>
+            </div>
+
+            <div class=" col-lg-6">
+                <h3>Contato</h3>
+                <div class="redes-sociais-container">
+                    <a href="https://api.whatsapp.com/send?phone=5511995114050">
+                        <img class="redes-sociais" src="../../Assets/img/Whats.png" alt="" />
+                        <p>(11)99511-4050</p>
+                    </a>
+                </div>
+                <div class="redes-sociais-container">
+                    <a href="">
+                        <img class="redes-sociais" src="../../Assets/img/face.png" alt="" />
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div class="redes-sociais-container">
+                    <a href="https://www.linkedin.com/in/intermaqdobrasil/">
+                        <img class="redes-sociais" src="../../Assets/img/linkedin.png" alt="" />
+                        <p>linkedin</p>
+                    </a>
+                </div>
+
+                <div class="redes-sociais-container">
+                    <a href="mailto:contato@intermaqdobrasil.com.br">
+                        <img class="redes-sociais" src="../../Assets/img/email.png" alt="" />
+                        <p>contato@intermaqdobrasil.com.br</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+
+<script>
+    document.getElementById("assunto").value = document.getElementById("produto-nome").innerHTML;
+
+    function mascara(o, f) {
+        v_obj = o
+        v_fun = f
+        setTimeout("execmascara()", 1)
+    }
+    function execmascara() {
+        v_obj.value = v_fun(v_obj.value)
+    }
+    function mtel(v) {
+        v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+        v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+        v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+        return v;
+    }
+    window.onload = function () {
+        document.getElementById('celular').onkeyup = function () {
+            mascara(this, mtel);
+        }
+    }
+
+    function criarUrl() {
+        let nome = document.getElementById("nome").value;
+        let assunto = document.getElementById("assunto").value;
+        let mensagem = document.getElementById("mensagem").value;
+        let celular = document.getElementById("celular").value;
+        event.preventDefault();
+
+
+        console.log(assunto + mensagem);
+
+
+        if (assunto !== "" && nome !== "" && celular !== "" && mensagem !== "") {
+            let url =
+                "mailto:contato@intermaqdobrasil.com.br?subject=" +
+                assunto +
+                "&body=" + " Nome: " +
+                nome + "%0D%0A" + " Celular: " +
+                celular + "%0D%0A" + " Conteudo: " +
+                mensagem;
+            console.log(url);
+            window.location.href = url;
+        } else {
+            alert("Por favor preencha todos os campos");
+        }
+
+
+    }
+</script>
