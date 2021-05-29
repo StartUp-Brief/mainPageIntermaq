@@ -1,14 +1,14 @@
 /* fieldset */
 #box-contato {
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   margin-top: 80px;
 }
 
 .mapa {
   display: inline-block;
-  margin: 10px;
   vertical-align: middle;
+  max-width: 100%;
 }
 .mapa iframe{
   border: none;
@@ -18,7 +18,6 @@
 #contato {
   margin: 0 auto;
   display: inline-block;
-  width: 800px;
   border: solid;
   border-color: #215baa;
   border-width: 3px;
