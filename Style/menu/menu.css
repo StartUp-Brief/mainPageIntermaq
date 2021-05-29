@@ -81,6 +81,11 @@
     text-align: center;
   }
   .menu .logo{
-    text-align: center;
+    display: block;
+     margin: 0 auto;
+  }
+  .menu .bars{
+   
+     margin: 0 auto;
   }
 }

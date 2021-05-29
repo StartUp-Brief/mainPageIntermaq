@@ -6,23 +6,22 @@
 }
 
 .mapa {
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 100%;
+  
 }
 .mapa iframe{
   border: none;
   margin-top: 50px;
+  width: 100%;
+  height: 80%;
 }
 
 #contato {
   margin: 0 auto;
-  display: inline-block;
   border: solid;
   border-color: #215baa;
   border-width: 3px;
   vertical-align: middle;
-  margin: 0 10px;
+ 
 }
 #titulo-contato {
   text-align: left;
