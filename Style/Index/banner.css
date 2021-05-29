@@ -1,3 +1,17 @@
+.carousel-item img{
+  max-height: 420px;
+  max-width: 1300px;
+}
+.carousel-item{
+ align-items: center;
+ text-align: center;
+}
+.banner{
+  margin: 0 auto;
+  
+}
+
+
 @media(max-width:1000px){
   .carousel-inner{
     margin-top: 3rem;
