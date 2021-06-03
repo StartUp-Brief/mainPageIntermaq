@@ -43,3 +43,10 @@ footer p {
 .redes-sociais-container a {
   color: aliceblue;
 }
+@media screen and (max-width: 850px){
+
+  footer {
+    margin: 10px;
+  }
+  
+}

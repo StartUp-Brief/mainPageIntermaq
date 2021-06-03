@@ -1,6 +1,6 @@
 .carousel-item img{
-  max-height: 420px;
-  max-width: 1300px;
+  max-height: 520px;
+  
 }
 .carousel-item{
  align-items: center;
@@ -10,7 +10,16 @@
   margin: 0 auto;
   
 }
-
+.banner .carousel-control-prev{
+    background: #215aaa55;
+    width: 100px;
+   
+}
+.banner .carousel-control-next{
+    background: #215aaa55;
+    width: 100px;
+   
+}
 
 @media(max-width:1000px){
   .carousel-inner{

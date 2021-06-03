@@ -11,16 +11,15 @@
  
   width: 300px;
   height: 300px;
-  display: inline-block;
   margin: 10px;
   background-image: url("../../../Assets/img/fundo\ card.jpg");
   border-radius: 50px;
   
- 
-  
-  
 }
 
+.card .nome-produto{
+  height: 52px;
+}
 .card:hover {
   cursor: pointer;
 }
