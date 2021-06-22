@@ -8,6 +8,7 @@
 .menu .logo {
   height: 80px;
   margin-left: 35px;
+  cursor: pointer;
 }
 
 .menu .financiamento{
